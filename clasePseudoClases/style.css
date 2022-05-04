@@ -18,6 +18,12 @@
     text-decoration: none;
 }
 
+/* Esto es una pseudoClase ya que 
+1) Esta llamando la accion con : 
+2) es una palabra clave que se añade a los selectores 
+y que especifica un estado especial del elemento seleccionado
+o
+Define el estilo de un estado especial de unm elemento*/
 .main-nav__item a:hover {
     color:blue;
 }
@@ -26,6 +32,15 @@
     color: brown;
 }
 
+/*
+Esto es un pseudoElemento ya que
+1) Esta llamando a la ubicacion con ::
+2) se añaden a los selectores, pero en cambio, 
+no describen un estado especial sino que, 
+permiten añadir estilos a una parte concreta del documento
+o
+Define el estilo de una parte especifica de un elemento
+*/
 .main-nav__item a::after {
     content: "|";
 }
